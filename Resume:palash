@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Resume:Palash Khobragade</title>
+    </head>
+<!-- -->
+    <body>
+
+        <table align="center" border="0" width="50%">
+            <tr>
+                <th colspan="2"><h1>Palash Khobragade</h1><p>(NOC Engineer)</p></th>
+            </tr>
+
+
+            <tr>
+                <td ><h3>Career Objective:</h3></td>
+                <td ><p>To work in a firm with a professional work driven environment where I can utilize and apply my knowledge,
+                skills which would enable me as a fresh graduate to grow while fulfilling Organizational goals.</p></td>
+            </tr>
+
+            <tr>
+                <td ><h3>Educational Qualification:</h3></td>
+                <td align="center">
+                    <table border="1" style="text-align: center">
+                        <thead>
+                            <td>Name of Examination</td>
+                            <td>Institution</td>
+                            <td>Year</td>
+                        </thead>
+                        <tr>
+                            <td>B.E. (IT)  </td>
+                            <td>  RTM Nagpur University</td>
+                            <td>2012-2016</td>
+                        </tr>
+                        <tr>
+                            <td> H.S.C. </td>
+                            <td>C.B.S.E.</td>
+                            <td>2011-2012</td>
+                        </tr>
+                        <tr>
+                            <td>  S.S.C.</td>
+                            <td>C.B.S.E.</td>
+                            <td>2010</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h3>Computer Proficiency:</h3>
+                </td>
+                <td ><p>
+                    C, C++, JAVA, MySQL, HTML, CSS, Angular JS, Android.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td ><h3>Extra Curricular Activities:</h3> </td>
+                <td>
+                    <ul>
+                        <li>Coordinator of SUIGENERIS(CSE-IT dept. forum)</li>
+                        <li>Member of Rotary Club</li>
+                        <li>Member of technical section of CSE-IT Dept. magazine REVISTA</li>
+                        <li>Has been to HCL-TSS Manesar(Haryana) onIndustrial Visit</li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td ><h3>Decleration:</h3></td>
+                <td><p>I do hereby declare that the above information is true to the best of my knowledge.</p></td>
+            </tr>
+
+            <tr>
+                <td align="left" colspan="2"><strong><h3>Contact Info:</h3></strong>
+                <address>Ph. 8983372543<br>E-mail: 18palash@gmail.com<br>
+                Add. : Nagpur Maharashtra</address>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
