@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resume: Palash Khobragade</title>
+        <style>
+            #header{
+
+                height: 100px;
+            }
+            #main{
+                align:center;
+                height:auto;
+            }
+            .head{
+                background-color: #34495e;
+
+            }
+            .left{
+                background-color: #95a5a6;
+            }
+            .right{
+                width: 700px;
+                background-color: white ;
+            }
+            #main{
+                font-family: "Courier New";
+
+
+            }
+            h1{
+                font-size: 45px;
+                color: #fdfefe;
+            }
+            h2{
+                text-transform:uppercase;
+                color:  #424949 ;
+            }
+
+            #footer{
+
+                height: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="header">
+
+        </div>
+        <div >
+            <!-- left spacing -->
+            <div align="right">
+
+                <!-- main pannel -->
+            </div>
+            <div id="main" align="center">
+                <!-- Resume head -->
+                <table class="head"  cellpadding="25">
+                 <thead >
+                    <td colspan="2">
+                        <table align="center">
+                            <tr>
+                                <td >
+                                    <img align="left" src="https://cdn2.iconfinder.com/data/icons/flat-style-svg-icons-part-1/512/boss_user_man_business_supervisor-512.png" width="80px" height="80px">
+                                </td>
+                                <td ><h1 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Palash Khobragade</h1><br>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                 </thead>
+
+                <tr >
+                    <!--  resume left pannel -->
+                    <td   class="left">
+
+                        <table align="top">
+                            <tr>
+                                <thead>
+                                    <h2>COMPUTER SKILLS</h2><hr>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                        <li>iOS</li>
+                                        <li>Swift</li>
+                                        <li>SQL</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>JavaScript</li>
+                                        <li>Microsoft Office</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table align="middle">
+                            <tr>
+                                <thead>
+                                        <h2 >SKILLS & ABILITIES</h2><hr>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Creative spirit</li>
+                                        <li>Organized</li>
+                                        <li>Time management</li>
+                                        <li>Team player</li>
+                                        <li>Fast learner</li>
+                                        <li>Motivated</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <thead>
+                                    <h2>CONTACT</h2><hr>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>
+
+                                        ☎ 8983372543<br>
+                                        ✉ 18palash@gmail.com<br>
+                                        @ M20 Mahada Colony Dattawadi <br>
+                                        Nagpur-440023
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+
+                    <!--Resume right pannel -->
+                    <td   class="right">
+                        <table>
+                            <tr>
+                                <thead>
+                                    <h2 >ABOUT</h2><hr>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>I am an I.T. Engineer seeking to start a new career in the field of Software
+                                        Development, where I can apply my knowledge and skills for continuous
+                                        improvement.</p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <thead>
+                                    <h2>Work Experience</h2><hr>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <p>
+                                           <strong> NOC ENGINEER (RELIANCE JIO INFOCOMM LTD. PROJECT)</strong><br>
+                                            Ceragon Networks Ltd. | April 2017 - Nov 2017
+                                        </p>
+                                        <li>Operation & Maintenance of NMS Server, MW outage Analysis.</li>
+                                        <li>Software upgradation of the equipment(IP20C).</li>
+                                        <li>Addition of NEID in Network Management System.</li>
+                                        <li>Providing Backend support to Field Team for Troubleshooting.</li>
+                                        <li>Good Knowledge of software Tools of Ceragon for NMS report and alarm rectification.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <thead>
+                                    <h2>Education</h2><hr>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                    <p><strong>BACHELOR OF ENGINEERING, INFORMATION TECHNOLOGY</strong><br>
+                                    S.B. Jain Institute of Technology | 2012 - 2016 <br>
+                                    SGPA 6.5</p>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <thead>
+                                    <h2>Projects</h2><hr>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <p><strong>BAYMAX HEALTH APP</strong></p>
+                                        <li>An Android application which provides guidelines to live a better and
+                                            clean life trying to avoid diseases and disorders that are caused due to
+                                            improper care of health.</li>
+
+                                    </ul>
+                                    <br>
+                                    <ul>
+                                        <p><strong>ONLINE HOUSE RENTAL PORTAL</strong></p>
+                                        <li>A website that makes it easier to find your new home without paying
+                                            any brokerage. It provides a marketplace for the free exchange of information.</li>
+
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table>
+                            <tr>
+                                <thead>
+                                    <h2>Awards</h2><hr>
+                                </thead>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                       <p> <strong>Operation Excellence Award</strong><br>
+                                        Ceragon Networks LTD.</p>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+
+            </div>
+
+            <!-- right Spacing -->
+            <div align="left">
+
+            </div>
+
+        </div>
+
+        <div id="footer">
+
+        </div>
+    </body>
+</html>
