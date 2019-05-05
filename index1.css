@@ -1,0 +1,40 @@
+.upper-box{
+    height: 40px;
+    background-color: rgba(255, 157, 0, 0.883);
+    padding-top: 5px;
+    padding-left: 20px;
+}
+.p1{ 
+    color: rgba(255, 255, 0, 0.876);
+}
+.row{
+    background-color: black;
+    color: rgba(255, 255, 0, 0.876);
+    padding-left: 10%;
+    padding-top: 1%;
+}
+@media screen and (max-width: 576px) {
+    select{
+        margin-top: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .row{
+        padding-right: 20px;
+    }
+  }
+.span{
+    margin-right: 20px;
+}
+.g1{
+    margin-top: -7px;
+}
+.lower{
+    height: 60px;
+    background-color: rgba(255, 157, 0, 0.883);
+}
+.col-md-8{
+    margin-left: 58%;
+    padding-top: 10px;
+}
