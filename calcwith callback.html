@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>callback trial</title>
+	<script type="text/javascript">
+		function xyz(a,b,callback)
+		{
+			return callback(a,b);
+		}
+		function add(a1,a2)
+		{
+			return a1+a2;
+		}
+		
+		function substraction(a1,a2)
+		{
+			return a1-a2;
+		}
+		function multiply(a1,a2)
+		{
+			return a1*a2;
+		}
+		function divide(a1,a2)
+		{
+			return a1/a2;
+		}
+		function modulus(a1,a2)
+		{
+			return a1%a2;
+		}
+		output=xyz(2,8,add)
+		console.log(output);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
