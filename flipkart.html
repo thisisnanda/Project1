@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flipkart</title>
+	<!--------Bootstrap link------->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+	<style type="text/css">
+		
+		.topbar{background-color:#2874F0;
+				width:100%;
+				height:60px;
+				position:fixed;
+				z-index:1234;}
+		.topbar a{color:#666666;}
+		.topbar a:hover{text-decoration:none;}
+		.topbar2{aoverflow-x: hidden;
+			background-color:white;
+				width:100%;
+				height:40px;
+				color:orange !important;
+				 -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+				 z-index:1;
+				 margin-bottom:5px;}
+		.topbar2 a{color:#666666;}
+		.topbar2 a:hover{text-decoration:none;}
+
+		.row{width:100%;
+			margin-left:auto;
+			margin-right:auto;}
+
+			@media screen and (max-width: 990px) { 
+			.topbar{background-color:#2874F0;
+				width:100%;
+				height:60px;
+				color:black !important;}
+
+			nav{height:auto;}
+			.topbar2{display:none;}
+			.searchbar1{width:25% !important;}
+			.aflipplus{width:90px !important;}
+
+			}
+
+
+		body{margin:0;
+			padding:0;
+		background-color:#F1F3F6;
+		}
+		 .flipplus{width:110px;
+				float:left;
+				margin-left:10px;
+				padding:2px;
+				margin-top:10px;}
+
+	
+		.searchbar1{width:40%;
+					border-radius:2px;
+					border:none;
+					height:40px;
+					padding:12px;
+					padding-bottom:15px;
+					display:inline;
+					float:left;
+				margin-left:20px;
+				margin-top:10px;
+				box-shadow:2px;}
+
+		.bluecolor{background-color:#2874F0;
+					color:white;
+				font-weight:bold;}
+		.bluecolor:hover{color:white;}
+		.topbarelementr p{margin-top:7px;}
+		.topbar .nav-link{color:white !important;
+					font-weight:50%;}
+		
+		.blackcolor{color:black !important;}
+		.dropd{text-align:center;}
+
+		section{margin-bottom:7px;}
+
+		.productrow{background-color:white !important;
+					height:100%;
+					width:99%;
+					margin-right:auto !important;
+						margin-left:auto !important;
+					-webkit-box-shadow:-webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);
+box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.39);}
+		.productcard{width:214px;
+					height:200px;
+					background-color:white;
+					float:left;
+					margin:2px;
+				text-align:center;}
+		.productimage{width:100px;
+					height:100px;
+					margin-left:auto;
+					margin-right:auto;
+					margin-top:10px;}
+		.productcard img{max-width:100%;
+						max-height:100%;
+						overflow: hidden;
+						margin-right:auto !important;
+						margin-left:auto !important;
+						}
+		.productcard img:hover{max-width:105%;
+						max-height:105%;}
+		.producttext{margin-top:2px;}
+		h3{margin-left:30px;
+			float:left;}
+		.dealheading{padding-top:10px;
+					padding-bottom:45px;
+					border-bottom:1px solid #E5E5E5;
+		}
+		.dealheading button{float:right;
+					border-radius:0;
+						margin-right:25px;
+						font-weight:bold;}
+		.dealheading img{float:left;
+						width:25px;
+						margin-top:10px;
+						margin-left:40px;}
+
+		.timer{float:left;
+				color:#7F7F7F;
+						margin-top:10px;
+						margin-left:3px;
+						font-weight:bold;}
+		.offers{margin-right:auto;
+				margin-left:auto;
+				width:99%;
+				height:100%;
+				-webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.40);
+-moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.40);
+box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.40);}
+		.offers img{float:left;
+					width:33.333%;}
+
+		.shadowcontainer{margin-right:auto;
+				margin-left:auto;
+						width:99%;
+						height:100%;
+						background-color:white;
+						-webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.40);
+-moz-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.40);
+box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.40);}
+
+	footer{background-color:#172337;
+		height:100%;
+		width:100%;
+		color:white;
+		font-size:80%;}
+	footer a{color:white !important;}
+
+	.footerdetails{padding-top:30px;
+					}
+
+	.leftmarginn{sborder-left:1px solid white;}
+	.leftmarginn:after {
+  content:""; 
+  background: #878787; 
+  position: absolute; 
+  top:0;
+  left: 0; 
+  height: 70%; 
+  width: 1px;
+}
+	
+	.footerdetails2{width:100%;
+					margin-right:auto;
+				margin-left:auto;
+				margin-bottom:20px;
+				border-top:1px solid #878787;
+				padding-top:20px;}
+	.footerdetails2 a{float:left;
+						}
+	.footerdetails2 img{margin-left:0px;
+						margin-top:5px;}
+
+	@media screen and (max-width: 1195px) { 
+			.footerdetails2 img{display:none;}
+			.dropdown7{width:650px !important;}
+			}
+	.dropdown9{width:900px;}
+	.dropdown7{width:900px;}
+	@media screen and (max-width: 1292px) { 
+			.dropdown7{width:800px;}
+
+			}
+
+	.womendropdown{width:550px;}
+	
+	.baggrey{background-color: #F9F9F9;}
+		
+	</style>
+	
+	
+	
+	
+	
+	
+</head>
+<body>
+	<header>
+
+		
+		<div class="clearfix"></div>
+		<div class="topbar">
+			<div class="container">
+				<img class="flipplus" src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fk-plus_043837.png">
+				<input type="text" placeholder="Search for products, brands and more" class="searchbar1" name="">
+				<nav class="navbar navbar-expand-lg float-right navbar-light bluecolor">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+
+  <div class="collapse  navbar-collapse float-right" id="navbarSupportedContent">
+    <ul class="navbar-nav float-right mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login & Signup</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Notification Preferences</a>
+          </li>
+          <li>
+            <a href="#!">Sell on Flipkart</a>
+          </li>
+          <li>
+            <a href="#!">24x7 Customer Support</a>
+          </li>
+          <li>
+            <a href="#!">Advertise</a>
+          </li>
+          <li>
+            <a href="#!">Download App</a>
+          </li>
+        </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cart</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+</div>
+			
+		<div class="clearfix"></div>
+		<div style="height:60px;"></div>
+
+<div class="topbar2">
+	<div class="row">
+		
+  <div class="col"><ul class="navbar-nav mr-auto">
+      
+    
+      <li class="nav-item dropdown">
+        <a class="blackcolor nav-link dropd dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Electronics
+        </a>
+        <div class="dropdown-menu dropdown9" aria-labelledby="navbarDropdown">
+       
+         <div class="row">
+  <div class="col"> <h6>Mobiles
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Mi
+</a>
+          </li>
+          <li>
+            <a href="#!">Realme
+	</a>
+          </li>
+          <li>
+            <a href="#!">Samsung
+</a>
+          </li>
+          <li>
+            <a href="#!">Infinix
+</a>
+          </li>
+          <li>
+            <a href="#!">OPPO
+</a>
+          </li>
+          <li>
+            <a href="#!">Apple
+</a>
+          </li>
+          <li>
+            <a href="#!">Vivo
+</a>
+          </li>
+          <li>
+            <a href="#!">Honor
+</a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"> <h6>Mobile Accessories
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Mobile Cases
+</a>
+          </li>
+          <li>
+            <a href="#!">Headphones & Headsets
+</a>
+          </li>
+          <li>
+            <a href="#!">Power Banks
+</a>
+          </li>
+          <li>
+            <a href="#!">Screenguards
+</a>
+          </li>
+           <li>
+            <a href="#!">Memory Cards
+</a>
+          </li>
+          <li>
+            <a href="#!">Smart Headphones
+</a>
+          </li>
+          <li>
+            <a href="#!">Mobile Cables
+</a>
+          </li>
+          <li>
+            <a href="#!">Mobile Chargers
+</a>
+          </li>
+        </ul></div>
+  <div class="col"> <h6>Laptops
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Gaming Laptops
+</a>
+          </li>
+          <li>
+            <a href="#!">Desktop PCs
+</a>
+          </li>
+          <li>
+            <a href="#!">Gaming & Accessories
+</a>
+          </li>
+          <li>
+            <a href="#!">Computer Accessories
+</a>
+          </li>
+           <li>
+            <a href="#!">External Hard Disks
+</a>
+          </li>
+          <li>
+            <a href="#!">Pendrives
+</a>
+          </li>
+          <li>
+            <a href="#!">Laptop Skins & Decals
+</a>
+          </li>
+          <li>
+            <a href="#!">
+Mouse</a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"> <h6>Featured
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Laptops on Buyback Guarantee
+</a>
+          </li>
+          <li>
+            <a href="#!">Flipkart SmartBuy
+</a>
+          </li>
+          <li>
+            <a href="#!">Li-Polymer Power Banks
+</a>
+          </li>
+          <li>
+            <a href="#!">Sony PS4 Pro & Slim
+</a>
+          </li>
+           <li>
+            <a href="#!">Apple Products
+</a>
+          </li>
+          <li>
+            <a href="#!">Microsoft Store
+</a>
+          </li>
+          <li>
+            <a href="#!">Microsoft Store
+</a>
+          </li>
+          <li>
+            <a href="#!">Lenovo Phab Series
+</a>
+          </li>
+        </ul></div>
+ 
+
+</div>
+        </div>
+      </li></ul></div>
+  <div class="col"><ul class="navbar-nav mr-auto">
+      
+    
+      <li class="nav-item dropdown">
+        <a class="blackcolor nav-link dropd dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         
+TVs & Appliances
+
+
+        </a>
+        <div class="dropdown-menu dropdown7" aria-labelledby="navbarDropdown">
+          <div class="row">
+  <div class="col"> <h6 >Television
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Android TVs
+</a>
+          </li>
+          <li>
+            <a href="#!">Smart & Ultra HD
+</a>
+          </li>
+          <li>
+            <a href="#!">Top Brands
+</a>
+          </li>
+          <li>
+            <a href="#!">Mi
+</a>
+          </li>
+          <li>
+            <a href="#!">Vu
+</a>
+          </li>
+          <li>
+            <a href="#!">Thomson
+</a>
+          </li>
+          <li>
+            <a href="#!">Samsung
+</a>
+          </li>
+          <li>
+            <a href="#!">LG</a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Air Conditioners
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Inverter AC
+</a>
+          </li>
+          <li>
+            <a href="#!">Split ACs
+</a>
+          </li>
+          <li>
+            <a href="#!">Window ACs</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+          
+        </ul></div>
+  <div class="col"><h6 >Kitchen Appliances
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Microwave Ovens
+</a>
+          </li>
+          <li>
+            <a href="#!">Oven Toaster Grills (OTG)
+</a>
+          </li>
+          <li>
+            <a href="#!">Juicer/Mixer/Grinder
+</a>
+          </li>
+          <li>
+            <a href="#!">Electric Kettle
+</a>
+          </li>
+          <li>
+            <a href="#!">Induction Cooktops
+</a>
+          </li>
+          <li>
+            <a href="#!">Chimneys
+</a>
+          </li>
+          <li>
+            <a href="#!">Hand Blenders
+</a>
+          </li>
+          <li>
+            <a href="#!">Sandwich Makers
+</a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Small Home Appliances
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Irons
+</a>
+          </li>
+          <li>
+            <a href="#!">Water Purifiers
+</a>
+          </li>
+          <li>
+            <a href="#!">Fans
+</a>
+          </li>
+          <li>
+            <a href="#!">Air Coolers
+</a>
+          </li>
+          <li>
+            <a href="#!">Inverters
+</a>
+          </li>
+          <li>
+            <a href="#!">Vacuum Cleaners
+</a>
+          </li>
+          <li>
+            <a href="#!">Sewing Machines
+</a>
+          </li>
+          <li>
+            <a href="#!">
+Water Geysers</a>
+          </li>
+        </ul></div>
+</div>
+        </div>
+      </li></ul></div>
+  <div class="col"><ul class="navbar-nav mr-auto">
+      
+    
+      <li class="nav-item dropdown">
+        <a class="blackcolor nav-link dropd dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Men
+
+        </a>
+        <div class="dropdown-menu dropdown7" aria-labelledby="navbarDropdown">
+          <div class="row">
+  <div class="col"> <h6 >Footwear
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Sports Shoes
+</a>
+          </li>
+          <li>
+            <a href="#!">Casual Shoes
+</a>
+          </li>
+          <li>
+            <a href="#!">Formal Shoes
+</a>
+          </li>
+          <li>
+            <a href="#!">Sandals & Floaters
+</a>
+          </li>
+          <li>
+            <a href="#!">Flip- Flops
+</a>
+          </li>
+          <li>
+            <a href="#!">Loafers
+</a>
+          </li>
+          <li>
+            <a href="#!">Running Shoes
+</a>
+          </li>
+          <li>
+            <a href="#!">
+Sneakers</a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Clothing
+
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">T-Shirts
+</a>
+          </li>
+          <li>
+            <a href="#!">Shirts
+s</a>
+          </li>
+          <li>
+            <a href="#!">Kurtas
+</a>
+          </li>
+          <li>
+            <a href="#!">Suits & Blazers
+
+</a>
+          </li>
+          <li>
+            <a href="#!">Jeans
+</a>
+          </li>
+          <li>
+            <a href="#!">Trousers
+</a>
+          </li>
+          <li>
+            <a href="#!">Shorts & 3/4ths
+</a>
+          </li>
+          <li>
+            <a href="#!">Cargos
+</a>
+          </li>
+        </ul></div>
+  <div class="col"><h6 >Watches
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Fastrack
+</a>
+          </li>
+          <li>
+            <a href="#!">Casio
+</a>
+          </li>
+          <li>
+            <a href="#!">Titan
+</a>
+          </li>
+          <li>
+            <a href="#!">Fossil
+</a>
+          </li>
+          <li>
+            <a href="#!">Sonata</a>
+          </li>
+        
+        </ul></div>
+  <div class="col baggrey"><h6 >Accessories
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Backpacks
+</a>
+          </li>
+          <li>
+            <a href="#!">Belts
+</a>
+          </li>
+          <li>
+            <a href="#!">Sunglasses
+</a>
+          </li>
+          <li>
+            <a href="#!">Luggage & Travel
+</a>
+          </li>
+          <li>
+            <a href="#!">Frames
+</a>
+          </li>
+          <li>
+            <a href="#!">Jewellery</a>
+          </li>
+          <li>
+            <a href="#!">Trimmers
+</a>
+          </li>
+          <li>
+            <a href="#!">Shavers</a>
+          </li>
+        </ul></div>
+</div>
+        </div>
+      </li></ul></div>
+  <div class="col"><ul class="navbar-nav mr-auto">
+      
+    
+      <li class="nav-item dropdown">
+        <a class="blackcolor nav-link dropd dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Women
+
+        </a>
+        <div class="dropdown-menu womendropdown" aria-labelledby="navbarDropdown">
+         <div class="row">
+  <div class="col"> <h6 >Clothing
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Top T-Shirts & Shirts
+</a>
+          </li>
+          <li>
+            <a href="#!">
+Jeans
+</a>
+          </li>
+          <li>
+            <a href="#!">Shorts
+</a>
+          </li>
+          <li>
+            <a href="#!">Skirts
+</a>
+          </li>
+          <li>
+            <a href="#!">Sarees
+</a>
+          </li>
+          <li>
+            <a href="#!">Kurtas & Kurtis
+</a>
+          </li>
+          <li>
+            <a href="#!">Dress Material
+</a>
+          </li>
+          <li>
+            <a href="#!">Lehenga Choli
+</a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Beauty & Grooming
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Make Up
+</a>
+          </li>
+          <li>
+            <a href="#!">Skin Care
+</a>
+          </li>
+          <li>
+            <a href="#!">Hair Care
+</a>
+          </li>
+          <li>
+            <a href="#!">Bath & Spa
+</a>
+          </li>
+          <li>
+            <a href="#!">Deodorants & Perfumes</a>
+          </li>
+        </ul></div>
+  <div class="col"><h6 >Sandals
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Flats
+</a>
+          </li>
+          <li>
+            <a href="#!">Heels
+</a>
+          </li>
+          <li>
+            <a href="#!">Wedges
+</a>
+          </li>
+          <li>
+            <a href="#!">Shoes
+</a>
+          </li>
+          <li>
+            <a href="#!">Sports Shoes
+</a>
+          </li>
+          <li>
+            <a href="#!">Casual Shoes
+</a>
+          </li>
+          <li>
+            <a href="#!">Boots
+</a>
+          </li>
+          <li>
+            <a href="#!">Ballerinas</a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Accessories
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Smart Bands
+</a>
+          </li>
+          <li>
+            <a href="#!">Handbags
+</a>
+          </li>
+          <li>
+            <a href="#!">Shoulder Bags
+</a>
+          </li>
+          <li>
+            <a href="#!">Totes
+</a>
+          </li>
+          <li>
+            <a href="#!">Sling bags
+</a>
+          </li>
+          <li>
+            <a href="#!">Clutches
+</a>
+          </li>
+          <li>
+            <a href="#!">Wallets & Belts
+</a>
+          </li>
+          <li>
+            <a href="#!">Luggage & Travel</a>
+          </li>
+        </ul></div>
+</div>
+        </div>
+      </li></ul></div>
+   <div class="col"><ul class="navbar-nav mr-auto">
+      
+    
+      <li class="nav-item dropdown">
+        <a class="blackcolor nav-link dropd dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Baby & Kids
+
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown9" aria-labelledby="navbarDropdown">
+          <div class="row">
+  <div class="col"> <h6 >Kids Clothing
+
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Polos & T-Shirts
+</a>
+          </li>
+          <li>
+            <a href="#!">Ethnic Wear
+</a>
+          </li>
+          <li>
+            <a href="#!">Shorts & 3/4ths
+
+</a>
+          </li>
+          <li>
+            <a href="#!">Dresses & Skirts
+</a>
+          </li>
+          <li>
+            <a href="#!">Ethnic Wear
+</a>
+          </li>
+          <li>
+            <a href="#!">T-shirts & Tops
+</a>
+          </li>
+          <li>
+            <a href="#!">Baby Boy Clothing
+</a>
+          </li>
+          <li>
+            <a href="#!">Body Suits</a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Kids Footwear
+
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Sandals
+ </a>
+          </li>
+          <li>
+            <a href="#!">Sport Shoes
+
+ </a>
+          </li>
+          <li>
+            <a href="#!">Flats & Bellies
+</a>
+          </li>
+          <li>
+            <a href="#!">Sport Shoes
+  </a>
+          </li>
+          <li>
+            <a href="#!">
+Character Shoes
+ </a>
+          </li>
+          
+        </ul></div>
+  <div class="col"><h6 >Toys
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Remote Control Toys
+ </a>
+          </li>
+          <li>
+            <a href="#!">Educational Toys
+ </a>
+          </li>
+          <li>
+            <a href="#!">Soft Toys
+</a>
+          </li>
+          <li>
+            <a href="#!">Cars & Die-cast Vehicles
+</a>
+          </li>
+          <li>
+            <a href="#!">Outdoor Toys
+  </a>
+          </li>
+          <li>
+            <a href="#!">Action Figures
+  </a>
+          </li>
+          <li>
+            <a href="#!">Board Games
+ </a>
+          </li>
+          <li>
+            <a href="#!">Musical Toys
+ </a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Baby Care
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Diapers
+ </a>
+          </li>
+          <li>
+            <a href="#!">Wipes
+ </a>
+          </li>
+          <li>
+            <a href="#!">Diapering & Potty Training
+ </a>
+          </li>
+          <li>
+            <a href="#!">Baby Bath, Hair & Skin Care
+ </a>
+          </li>
+          <li>
+            <a href="#!">Baby Grooming
+ </a>
+          </li>
+          <li>
+            <a href="#!">Baby Bathing Accessories
+ </a>
+          </li>
+          <li>
+            <a href="#!">Baby Gift Sets & Combo
+ </a>
+          </li>
+          <li>
+            <a href="#!">Baby Oral Care
+ </a>
+          </li>
+        </ul></div>
+</div>
+        </div>
+      </li></ul></div>
+  <div class="col"><ul class="navbar-nav mr-auto">
+      
+    
+      <li class="nav-item dropdown">
+        <a class="blackcolor nav-link dropd dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home & Furniture
+
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown9" aria-labelledby="navbarDropdown">
+          <div class="row">
+  <div class="col"> <h6 >Furniture
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Kids Furniture
+ </a>
+          </li>
+          <li>
+            <a href="#!">Beds
+</a>
+          </li>
+          <li>
+            <a href="#!">Sofas
+  </a>
+          </li>
+          <li>
+            <a href="#!">Dining tables & Sets
+ </a>
+          </li>
+          <li>
+            <a href="#!">Mattresses
+ </a>
+          </li>
+          <li>
+            <a href="#!">Tables
+ </a>
+          </li>
+          <li>
+            <a href="#!">Office Chairs
+ </a>
+          </li>
+          <li>
+            <a href="#!">Chairs
+ </a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Kitchen &Cookware
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Pans
+ </a>
+          </li>
+          <li>
+            <a href="#!">Tawas
+ </a>
+          </li>
+          <li>
+            <a href="#!">Pressure Cookers
+ </a>
+          </li>
+          <li>
+            <a href="#!">Kitchen tools
+ </a>
+          </li>
+          <li>
+            <a href="#!">Gas Stoves </a>
+          </li>
+          <li>
+            <a href="#!">Coffee Mugs
+ </a>
+          </li>
+          <li>
+            <a href="#!">Dinner Set
+ </a>
+          </li>
+          <li>
+            <a href="#!"> Barware</a>
+          </li>
+        </ul></div>
+  <div class="col"><h6 >Furnishing
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Bedsheets
+ </a>
+          </li>
+          <li>
+            <a href="#!">Curtains
+ </a>
+          </li>
+          <li>
+            <a href="#!">Cushions & Pillows
+ </a>
+          </li>
+          <li>
+            <a href="#!">Blankets
+ </a>
+          </li>
+          <li>
+            <a href="#!">Bath Towels
+ </a>
+          </li>
+          <li>
+            <a href="#!">Kitchen & Table Linen
+ </a>
+          </li>
+          <li>
+            <a href="#!">Floor Coverings </a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Home Lighting
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!"> Bulbs
+</a>
+          </li>
+          <li>
+            <a href="#!">Wall Lamp
+ </a>
+          </li>
+          <li>
+            <a href="#!">Table Lamp
+ </a>
+          </li>
+          <li>
+            <a href="#!">Ceiling Lamp
+ </a>
+          </li>
+          <li>
+            <a href="#!">Emergency Lights </a>
+          </li>
+        </ul></div>
+</div>
+        </div>
+      </li></ul></div>
+  <div class="col"><ul class="navbar-nav mr-auto">
+      
+    
+      <li class="nav-item dropdown">
+        <a class="blackcolor nav-link dropd dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sports & Books
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown9" aria-labelledby="navbarDropdown">
+          <div class="row">
+  <div class="col"> <h6 >Books
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Entrance Exams
+ </a>
+          </li>
+          <li>
+            <a href="#!">Academic
+</a>
+          </li>
+          <li>
+            <a href="#!">Literature & Fiction
+ </a>
+          </li>
+          <li>
+            <a href="#!">Indian Writing
+  </a>
+          </li>
+          <li>
+            <a href="#!">Biographies
+ </a>
+          </li>
+          <li>
+            <a href="#!">Children
+</a>
+          </li>
+          <li>
+            <a href="#!">Business
+  </a>
+          </li>
+          <li>
+            <a href="#!">Self Help
+ </a>
+          </li>
+        </ul></div>
+  <div class="col baggrey"><h6 >Stationery
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Pens
+ </a>
+          </li>
+          <li>
+            <a href="#!">Diaries
+ </a>
+          </li>
+          <li>
+            <a href="#!">Key Chains
+ </a>
+          </li>
+          <li>
+            <a href="#!">Desk Organisers
+ </a>
+          </li>
+          <li>
+            <a href="#!">Calculators </a>
+          </li>
+        </ul></div>
+  <div class="col"><h6 >Sports
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Cricket
+ </a>
+          </li>
+          <li>
+            <a href="#!">Badminton
+</a>
+          </li>
+          <li>
+            <a href="#!">Cycling
+  </a>
+          </li>
+          <li>
+            <a href="#!"> Camping & Hiking
+</a>
+          </li>
+          <li>
+            <a href="#!">Football
+ </a>
+          </li>
+          <li>
+            <a href="#!"> Skating
+</a>
+          </li>
+          <li>
+            <a href="#!">Swimming </a>
+          </li>
+          
+        </ul></div>
+  <div class="col baggrey"><h6 >Exercise & Fitness
+</h6>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Yoga Mats
+</a>
+          </li>
+          <li>
+            <a href="#!">Gloves
+ </a>
+          </li>
+          <li>
+            <a href="#!">Dumbbells
+  </a>
+          </li>
+          <li>
+            <a href="#!">Home Gyms
+ </a>
+          </li>
+          <li>
+            <a href="#!">Treadmills
+ </a>
+          </li>
+          <li>
+            <a href="#!">Sippers & Shakers
+ </a>
+          </li>
+          <li>
+            <a href="#!">Supports </a>
+          </li>
+        </ul></div>
+</div>
+        </div>
+      </li></ul></div>
+
+  
+
+</div>
+</div>
+
+	</header>
+
+	<section>
+			
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://rukminim1.flixcart.com/flap/3376/560/image/2c8a7346977dfe76.jpg?q=50" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 "  src="https://rukminim1.flixcart.com/flap/844/140/image/1133a906e0cd8b84.jpg?q=50" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+	</section>
+
+
+	<section>
+		<div class="productrow">
+			<div class="dealheading">
+			<h3 class="blackcolor">Deals of Day</h3>
+			<img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/timer_931251.svg">
+			<div class="timer">12 : 31 : 21 Left</div>
+			<button type="button" class="btn btn-primary">VIEW ALL</button>
+			</div>
+			
+			<div class="clearfix"></div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/jtsz3bk0/headphone/h/r/h/boat-bassheads-225-with-carrying-case-original-imaf4spuynrw3sgh.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Headphones & Speakers</b>
+				<p style="color:green; margin-bottom:0px;">From ₹375</p>
+				 <p class="blackcolor">Skullcandy, JBL & more</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+			<img src="https://rukminim1.flixcart.com/image/300/300/jjd6aa80/backpack/y/r/n/luxur-uber061-backpack-f-gear-original-imaf6ye77qtp7gnq.jpeg?q=70">
+			</div>
+			<div class="producttext">
+				<b class="blackcolor">Skybags American Tourister</b>
+				<p style="color:green; margin-bottom:0px;">40-80% + Extra5% Off</p>
+				 <p class="blackcolor">Backpacks, Trolleys, Wallets</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/jrjizrk0/fan/z/p/k/renesa-energy-saving-5-star-rated-with-remote-control-and-bldc-original-imafdbhthhawng26.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Fans</b>
+				<p style="color:green; margin-bottom:0px;">From ₹1374</p>
+				 <p class="blackcolor">Bajaj & Havels</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/shoe/q/e/h/sx0277g-7-sparx-blue-original-imaeqgfyzgmgpp4n.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Men's Footwear</b>
+				<p style="color:green; margin-bottom:0px;">Starting @ ₹199</p>
+				 <p class="blackcolor">Red Tape, Sparx & more</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/watch/q/z/h/mf13-timex-original-imaejhptznhjnska.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Timex, Maxima, Titan</b>
+				<p style="color:green; margin-bottom:0px;">Min.50% + Extra7%Off</p>
+				 <p class="blackcolor">Watches</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/j1nvwcw0/memory-card/microsdxc/d/n/x/samsung-mb-mc64ga-in-original-imaet6zagkfzn2nw.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Memory Cards, PenDrives</b>
+				<p style="color:green; margin-bottom:0px;">From ₹279</p>
+				 <p class="blackcolor">SanDisk, Sony & More</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</section>
+	
+
+
+
+	<section>
+		<div class="productrow">
+			<div class="dealheading">
+			<h3 class="blackcolor">Trending Offers</h3>
+			
+			<button type="button" class="btn btn-primary">VIEW ALL</button>
+			</div>
+			
+			<div class="clearfix"></div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/jqo3b0w0/sari/6/f/p/free-107-sarvam-fashion-original-imafa9d8cmpg5w8k.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Sarees</b>
+				<p style="color:green; margin-bottom:0px;">Top Picks</p>
+				 <p class="blackcolor">Buy Now!</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+			<img src="https://rukminim1.flixcart.com/image/300/300/jr9iwsw0/t-shirt/v/c/d/s-tnv-rnfulabstract1-tripr-original-imafd2huzeffqyyr.jpeg?q=70">
+			</div>
+			<div class="producttext">
+				<b class="blackcolor">Men's T-Shirts</b>
+				<p style="color:green; margin-bottom:0px;">Top Offer</p>
+				 <p class="blackcolor">Grab Noew!</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/jsyyufk0/wall-clock/v/m/h/cola-3001a-cola-analog-precisio-original-imafef98uajgs8e5.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Wall Clocks</b>
+				<p style="color:green; margin-bottom:0px;">Top Offers</p>
+				 <p class="blackcolor">Shop Now!</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/jr6o13k0/watch/w/q/z/1164-br-fogg-original-imaf9stmmgg2eq2f.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Wrist Watches</b>
+				<p style="color:green; margin-bottom:0px;">Extra 7% Off</p>
+				 <p class="blackcolor">Explore Now!</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/jesunbk0/lipstick/d/d/7/4-7-enrich-matte-lipstick-lakme-original-imaethmzz8yvqyjh.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Lipstick</b>
+				<p style="color:green; margin-bottom:0px;">Extra 5% Off</p>
+				 <p class="blackcolor">Great Saving</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/ji7qikw0/dress/s/a/f/xl-gmlr342-xl-g-m-collections-original-imaejnhebpuhzbvz.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Womens Dresses</b>
+				<p style="color:green; margin-bottom:0px;">Extra 5% Off</p>
+				 <p class="blackcolor">Hurry</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</section>
+
+
+	<section>
+		<div class="offers">
+			<img src="https://rukminim1.flixcart.com/flap/492/201/image/5d6f14e60ee15cf3.jpg?q=50">
+
+			<img src="https://rukminim1.flixcart.com/flap/492/201/image/cc568c8b18067f99.jpg?q=50">
+
+			<img src="https://rukminim1.flixcart.com/flap/492/201/image/7b82dcaa867dc935.jpg?q=50">
+		</div>
+		<div class="clearfix"></div>
+	</section>
+
+	<section>
+		<div class="productrow">
+			<div class="dealheading">
+			<h3 class="blackcolor">Men's Footwear</h3>
+			
+			<button type="button" class="btn btn-primary">VIEW ALL</button>
+			</div>
+			
+			<div class="clearfix"></div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/j7asfbk0/shoe/k/a/u/gc-1868115-42-woodland-camel-original-imaexkhcehpj93tb.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Woodland</b>
+				<p style="color:green; margin-bottom:0px;">Upto 50% Off</p>
+				 <p class="blackcolor">Casual, Formal</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+			<img src="https://rukminim1.flixcart.com/image/495/594/joq2qa80/shoe/e/j/d/aa1625-001-13-nike-black-white-original-imafb28uzrgggxck.jpeg?q=50">
+			</div>
+			<div class="producttext">
+				<b class="blackcolor">Nike</b>
+				<p style="color:green; margin-bottom:0px;">Upto 40% Off</p>
+				 <p class="blackcolor">Sports Shoes</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/j3orcsw0/sandal/k/x/g/fbf-ss0457g-7-sparx-grey-orange-original-imaeurz76mugvpmp.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Sparx, Fila</b>
+				<p style="color:green; margin-bottom:0px;">Under ₹799</p>
+				 <p class="blackcolor">Sandals & Floaters</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/shoe/h/q/n/30592202-12-puma-black-original-imaeqer4cygtyq32.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Puma</b>
+				<p style="color:green; margin-bottom:0px;"> 50-80% Off</p>
+				 <p class="blackcolor"> Men's Footwear</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/shoe/9/b/b/t-blue-orange-sc0283g-sm-283-sparx-10-original-imaepjnn8frr5xwc.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Sparx</b>
+				<p style="color:green; margin-bottom:0px;">Upto 75% Off</p>
+				 <p class="blackcolor">Men's Casual Shoes</p>
+				</div>
+			</div>
+
+			<div class="productcard">
+				<div class="productimage">
+				<img src="https://rukminim1.flixcart.com/image/300/300/jerf7gw0/shoe/a/u/z/run-dashride-xtreme-ss18-8-reebok-navy-neon-gren-original-imaf3dd3zaysmgag.jpeg?q=70">
+				</div>
+				<div class="producttext">
+				<b class="blackcolor">Reebok, Adidas</b>
+				<p style="color:green; margin-bottom:0px;">Upto 70% Off</p>
+				 <p class="blackcolor">Men's Footwear</p>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="footerdetails">
+		<div class="row">
+  <div class="col-8">
+  	<div class="row">
+  <div class="col"><h5 class="text-uppercase">ABOUT</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Contact Us</a>
+          </li>
+          <li>
+            <a href="#!">About Us</a>
+          </li>
+          <li>
+            <a href="#!">Flipkart Stories</a>
+          </li>
+          <li>
+            <a href="#!">Press</a>
+          </li>
+        </ul></div>
+  <div class="col"><h5 class="text-uppercase">HELP</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Payments</a>
+          </li>
+          <li>
+            <a href="#!">Shipping</a>
+          </li>
+          <li>
+            <a href="#!">Cancellation & Return</a>
+          </li>
+          <li>
+            <a href="#!">FAQ</a>
+          </li>
+        </ul></div>
+  <div class="col"><h5 class="text-uppercase">POLICY</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Return Policy</a>
+          </li>
+          <li>
+            <a href="#!">Terms Of Use</a>
+          </li>
+          <li>
+            <a href="#!">Security</a>
+          </li>
+          <li>
+            <a href="#!">Privacy</a>
+          </li>
+        </ul></div>
+  <div class="col"><h5 class="text-uppercase">Social</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Facebook</a>
+          </li>
+          <li>
+            <a href="#!">Twitter</a>
+          </li>
+          <li>
+            <a href="#!">Youtube</a>
+          </li>
+          <li>
+            <a href="#!">Instagram</a>
+          </li>
+        </ul></div>
+</div>
+  </div>
+  <div class="col-4 leftmarginn">  <div class="row">
+    <div class="col">
+      <h5 >Mail Us:</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Flipkart Internet Pvt Ltd Block B (Begonia),
+
+Ground Floor, Embassy Tech Village,
+
+Outer Ring Road, Devarabeesanahalli Village,
+
+Varthur Hobli, Bengaluru East Taluk,
+
+Bengaluru District,
+
+Karnataka, India, 560103.</a>
+          </li>
+          
+        </ul>
+    </div>
+    <div class="col">
+      <h5 >Registered Office Address:</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Flipkart Internet Private Limited,
+
+Vaishnavi Summit, Ground Floor, 7th Main,
+
+80 Feet Road, 3rd Block,
+
+Koramangala,
+
+Bengaluru - 560034
+
+India
+
+CIN : U51109KA2012PTC066107
+
+Telephone: 1800 208 9898</a>
+          </li>
+        
+        </ul>
+    </div>
+  </div></div>
+</div>
+
+</div>
+<div class="clearfix"></div>
+<div class="footerdetails2">
+	
+	  <div class="row">
+  <div class="col-8"><div class="row">
+  <div class="col"><h6>Sell On Flipkart</h6>
+
+	</div>
+	  <div class="col"><h6>Advertise</h6>
+	</div>
+	  <div class="col"><h6>Gift Cards</h6>
+	</div>
+	  <div class="col"><h6>Help Center</h6></div>
+
+	</div></div>
+	  <div class="col-4">
+	<h6>© 2007-2019 Flipkart.com</h6>
+	<img src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_2dd397.svg">
+	</div>
+	</div>
+
+	</div>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

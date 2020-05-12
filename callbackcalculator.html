@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator Using Call Back Function</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	
+	console.log("Calculator Using Call Back Function");
+
+		function calcul(n1,n2,callback)
+		{
+			return callback(n1,n2);
+		}
+		function add(n1,n2)
+		{
+			return n1+n2;
+		}
+		function subtract(n1,n2)
+		{
+			return n1-n2;
+		}
+		function multiply(n1,n2)
+		{
+			return n1*n2;
+		}
+		function divide(n1,n2)
+		{
+			return n1/n2;
+		}
+		function modulo(n1,n2)
+		{
+			return n1%n2;
+		}
+		output=calcul(9,4,add)
+		console.log("Addition 9+4=");
+		console.log(output);
+
+		output=calcul(9,4,subtract)
+		console.log("Subtraction 9-4=");
+		console.log(output);
+
+		output=calcul(9,4,multiply)
+		console.log("Multiplication 9*4=");
+		console.log(output);
+
+		output=calcul(9,4,divide)
+		console.log("Division 9/4=");
+		console.log(output);
+
+		output=calcul(9,4,modulo)
+		console.log("Modulo 9%4=");
+		console.log(output);
+
+</script>
+
+</body>
+</html>
